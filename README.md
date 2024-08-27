@@ -33,13 +33,13 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 
 2. Navigate to the project directory:
 
-```
+```sh
 cd notes-app
 ```
 
 3. Install the dependencies:
 
-```
+```sh
 npm install
 ```
 
