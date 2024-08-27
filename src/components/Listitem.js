@@ -37,10 +37,10 @@ const ListItem = ({ note }) => {
     <Link to={`/note/${note.id}`}>
       <div id={note.id} className="notes-list-item">
         <h2>{getTitle(note)}</h2>
-        <p>
+        <div>
           <span>{getTime(note)}</span>
           <div>{getContent(note)}</div>
-        </p>
+        </div>
       </div>
     </Link>
   )

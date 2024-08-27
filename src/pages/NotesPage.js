@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
+import { API_BASE_URL } from '../constants';
 import AddButton from '../components/AddButton'
 import ListItem from '../components/Listitem';
 
@@ -13,7 +14,7 @@ const NotesPage = () => {
   }, [location]);
 
   const getNotes = async () => {
-    const res = await fetch('http://localhost:5000/notes');
+    const res = await fetch(`${API_BASE_URL}`);
     const data = await res.json();
     setNotes(data);
   }

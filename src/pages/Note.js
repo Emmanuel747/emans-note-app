@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link, useNavigate, Navigate } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 
+import { API_BASE_URL } from '../constants';
 import { ReactComponent as ArrowLeft } from '../assets/arrow-left.svg'
 
 const Note = () => {
@@ -8,22 +9,23 @@ const Note = () => {
   const { id: noteId } = useParams();
   const [note, setNote] = useState(null)
 
-  useEffect(() => { getNote(); }, [noteId])
+  useEffect(() => {
+    const getNote = async () => {
+      if (noteId === 'new') return; // STOPS EARLY
+      try {
+        const res = await fetch(`${API_BASE_URL}/${noteId}`);
+        const data = await res.json();
+        setNote(data);
 
-  const getNote = async () => {
-    if (noteId === 'new') return; // STOPS EARLY
-    try {
-      const res = await fetch(`http://localhost:5000/notes/${noteId}`);
-      const data = await res.json();
-      setNote(data);
-
-    } catch (err) {
-      setNote(null);
+      } catch (err) {
+        setNote(null);
+      }
     }
-  }
+    getNote();
+  }, [noteId])
 
   const createNote = async () => {
-    await fetch(`http://localhost:5000/notes/`, {
+    await fetch(`${API_BASE_URL}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -33,7 +35,7 @@ const Note = () => {
   };
 
   const updateNote = async () => {
-    await fetch(`http://localhost:5000/notes/${noteId}`, {
+    await fetch(`${API_BASE_URL}/${noteId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -43,7 +45,7 @@ const Note = () => {
   };
 
   const deleteNote = async () => {
-    await fetch(`http://localhost:5000/notes/${noteId}`, {
+    await fetch(`${API_BASE_URL}/${noteId}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'

@@ -60,3 +60,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Dev Notes
 
 - For netlify deployment `CI= npm run build` bypasses warnings
+- JSON backend hosted on `my-json-server.typicode.com`
