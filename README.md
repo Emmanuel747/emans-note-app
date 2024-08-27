@@ -59,4 +59,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Dev Notes
 
-- For netlify deployment `CI = npm run build` bypasses warnings
+- For netlify deployment `CI= npm run build` bypasses warnings
