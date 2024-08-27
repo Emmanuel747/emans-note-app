@@ -2,7 +2,7 @@
 
 This project is a simple Notes App bootstrapped with [Create React App](https://github.com/facebook/create-react-app) by Emmanuel E. It allows users to create, view, edit, and delete notes.
 
-![Notes App Screenshot](./assets/notes-app-screenshot.png)
+![Notes App Screenshot](https://github.com/Emmanuel747/emans-note-app/blob/master/src/assets/EmansNoteAppHomePage.png?raw=true)
 
 ## Features
 
