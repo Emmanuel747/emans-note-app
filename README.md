@@ -27,21 +27,21 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 
 1. Clone the repository:
 
-   ```sh
+   ```
    git clone https://github.com/your-username/notes-app.git
    ```
 
 2. Navigate to the project directory:
 
-```sh
-cd notes-app
-```
+   ```
+   cd notes-app
+   ```
 
 3. Install the dependencies:
 
-```sh
-npm install
-```
+   ```
+   npm install
+   ```
 
 ### Available Scripts
 
