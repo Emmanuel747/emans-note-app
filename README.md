@@ -1,6 +1,9 @@
 # Emans Notes App
+Try it [here](https://emans-note-app.netlify.app/) 
+Note: You can only view the static JSON data as the server needs to be hosted in the cloud.
 
-This project is a simple Notes App bootstrapped with [Create React App](https://github.com/facebook/create-react-app) by Emmanuel E. It allows users to create, view, edit, and delete notes.
+This project is a simple Notes App bootstrapped with [Create React App](https://github.com/facebook/create-react-app) by **Emmanuel E.** 
+It allows users to create, view, edit, and delete notes.
 
 ![Notes App Screenshot](https://github.com/Emmanuel747/emans-note-app/blob/master/src/assets/EmansNoteAppHomePage.png?raw=true)
 
