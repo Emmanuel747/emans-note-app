@@ -56,3 +56,7 @@ To learn React, check out the React documentation.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Dev Notes
+
+- For netlify deployment `CI = npm run build` bypasses warnings
